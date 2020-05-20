@@ -46,7 +46,7 @@ function lose(user,comp){
 function draw(comp){
     drawScore++;
     drawScore_span.innerHTML = drawScore;
-    result_p.innerHTML = "Computer also choosed "+ decode(comp)+cWord +". Draw!";
+    result_p.innerHTML = "Computer also chose "+ decode(comp)+cWord +". Draw!";
     const glow = document.getElementById(comp).classList
     glow.add("gray-glow");
     setTimeout(() =>  glow.remove("gray-glow"),500);
